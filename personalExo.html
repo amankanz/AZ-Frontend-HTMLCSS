@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table</title>
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      font-size: 1.6rem;
+      border-collapse: collapse;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: magenta;
+    }
+    tr:hover {
+      background: lightcoral;
+    }
+    td {
+      /* background-color: #fff; */
+      color: #333;
+      font-size: 1.4rem;
+    }
+    th, td {
+      text-align: center;
+      padding: 1em;
+    }
+    
+    /*END OF TABLE ONE*/
+
+    
+  </style>
+</head>
+<body>
+  <table border="1"> 
+    <caption>Ziha Corp's Shareholders</caption>
+    <thead>
+    <!--Table header rows and Table cells (th)-->
+      <tr>
+        <th colspan="7">Shareholder Screening</th>
+      </tr>
+      <tr>
+        <th scope="col">Relation</th>
+        <th scope="col">Full-Name</th>
+        <th scope="col">Gender</th>
+        <th>Age</th>
+        <th>Digital Address</th>
+        <th>Marital Status</th>
+        <th>Salary Income Yearly</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--Table data rows anmd table data cells (td)-->
+ 
+      <tr>
+        <td rowspan="3">Family</td>
+        <td>Ziha Amani</td>
+        <td>Male</td>
+        <td>25</td>
+        <td>ziha.amani@smething.org</td>
+        <td>Single</td>
+        <td>$146,546,556</td>
+      </tr>
+
+      <tr>
+        <td>Majolera Ingrid Ziha</td>
+        <td>Female</td>
+        <td>23</td>
+        <td>major.ingrid@smething.org</td>
+        <td>Single</td>
+        <td>$546,556</td>
+      </tr>
+
+      <tr>
+        <td>Rehemah Ziha</td>
+        <td>Male</td>
+        <td>09</td>
+        <td>ziha.rehemah@smething.org</td>
+        <td>Single</td>
+        <td>$389,556</td>
+      </tr>
+
+   
+      <tr>
+        <td rowspan="2">Friends</td>
+        <td>Ruth Muhabura</td>
+        <td>Female</td>
+        <td>23</td>
+        <td>muhabura@smething.org</td>
+        <td>Single</td>
+        <td>$89,556</td>
+      </tr>
+
+      <tr>
+        <td>William Tao</td>
+        <td>Male</td>
+        <td>27</td>
+        <td>tao@smething.org</td>
+        <td>Single</td>
+        <td>$289,556</td>
+      </tr>
+      <tr>
+        <td colspan="6">Total Income Yearly</td>
+        <td>$147,861,780</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="7">@Something.org we believe in you.</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+  <hr>
+  <br>
+
+  <table border="1">
+    <caption>IUEA Business Management Faculty</caption>
+    <thead>
+      <tr>
+        <th colspan="5">BPLM Student's Record</th>
+      </tr>
+      <tr>
+        <th>Class</th>
+        <th>Reg N0</th>
+        <th>Name</th>
+        <th>GPA</th>
+        <th>Digital Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">First Year</td>
+        <td>103-BPLM</td>
+        <td>Zihalirwa</td>
+        <td>3.73</td>
+        <td>ziha@something.com</td>
+      </tr>
+      <tr>
+        <td>104-BPLM</td>
+        <td>Machar</td>
+        <td>3.3</td>
+        <td>machar@something.com</td>
+      </tr>
+      <tr>
+        <td>105-BPLM</td>
+        <td>Nuhur</td>
+        <td>4.3</td>
+        <td>nuhur@something.com</td>
+      </tr>
+      <tr>
+        <td>106-BPLM</td>
+        <td>Taban</td>
+        <td>3.66</td>
+        <td>taban@something.com</td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">Second Year</td>
+        <td>203-BPLM</td>
+        <td>Zihalirwa</td>
+        <td>4.73</td>
+        <td>ziha@something.com</td>
+      </tr>
+      <tr>
+        <td>204-BPLM</td>
+        <td>Machar</td>
+        <td>4.3</td>
+        <td>machar@something.com</td>
+      </tr>
+      <tr>
+        <td>205-BPLM</td>
+        <td>Nuhur</td>
+        <td>4.63</td>
+        <td>nuhur@something.com</td>
+      </tr>
+      <tr>
+        <td>207-BPLM</td>
+        <td>Diana</td>
+        <td>4.43</td>
+        <td>diana@something.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div style="margin-top: 30em;"></div>
+</body>
+</html>
