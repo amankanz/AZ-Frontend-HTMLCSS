@@ -1,0 +1,53 @@
+/*CSS Reset*/
+html {
+  font-size: 62.5%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: lightcoral;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff
+}
+input {
+  font-size: 2.5rem;
+  padding: 1em 1.5em;
+  background-color: #063970;
+  color: #fff;
+  border-radius: .5rem;
+  margin-bottom: 1em;
+}
+
+button {
+  font-size: 2.6rem;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #063970;
+  color: #fff;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: .5em;
+}
+
+.clear:hover {
+  background-color: #FF0000;
+  color: #fff;
+}
+
+.calculate {
+  background-color: #84ddf3;
+}
