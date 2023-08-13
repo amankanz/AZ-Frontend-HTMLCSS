@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.colored-heading {
+  background-color: #3498DB;
+}
+
+.styled-list {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.styled-list li {
+  color: #E74C3C;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.styled-list li:hover {
+  background-color: #F39C12;
+  color: #fff;
+}

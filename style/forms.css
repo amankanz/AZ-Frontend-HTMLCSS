@@ -1,0 +1,81 @@
+/*GOOGLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CSS RESET*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bgColor: #96DAAB;
+  --themColor: #31B6A2;
+  --textColoe: #7E7575;
+  --fromBGcolor: #FFFFFF;
+}
+
+body {
+  background-image: linear-gradient(to top right, #96DAAB, #31B6A2);
+  display: block;
+  /* text-align: center; */
+  min-height: 100vh;
+}
+
+form {
+  /* text-align: center; */
+  background-color: var(--fromBGcolor);
+  width: 50%;
+  margin: 5% auto;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+label, input, select {
+  margin-bottom: 1rem;
+  color: var(--textColoe);
+  font-size: 1.6rem;
+}
+
+h2 {
+  color: var(--themColor);
+  font-size: 2rem;
+  text-align: center;
+}
+label {
+  display: block;
+}
+.gender {
+  display: inline-block;
+}
+.hobbies {
+  display: inline-block;
+}
+
+input[type='text'], input[type='email'], input[type='number'],
+input[type='tel'], input[type='date'], select, textarea {
+  padding: .5rem 1rem;
+  width: 60%;
+}
+
+input[type='submit'] {
+  background-color: var(--bgColor);
+  padding: 1rem 13rem;
+  border-style: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transform: .3s;
+}
+input[type='submit']:hover {
+  background-color: var(--themColor);
+  color: var(--fromBGcolor);
+}
+
+
