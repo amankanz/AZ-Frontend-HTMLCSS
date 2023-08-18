@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms in HTML</title>
+</head>
+<body>
+  <form action="process_form.php" method="post" novalidate>
+    <h2>Types of Input element </h2>
+    <!--Form elements go here-->
+    <h3>Text Input</h3>
+    <input type="text" id="username" name="username" placeholder="Enter Username">
+    <br>
+    <h3>Password Input</h3>
+    <input type="password" id="password" name="password" autocomplete="off" placeholder="Enter Password">
+    <br>
+    <h3>Number Input</h3>
+    <input type="number" id="number" name="quantity" min="1" max="12" step="1" placeholder="Qty">
+    <br>
+    <h3>Radio Input</h3>
+    <input type="radio" id="gender" name="gender" value="male">Male
+    <input type="radio" id="gender" name="gender" value="female">Female
+    <input type="radio" id="gender" name="gender" value="other">Other
+    <br>
+    <h3>Checkbox Input</h3>
+    <input type="checkbox"  id="favoriteSongs" name="songs" value="rap">Rap
+    <input type="checkbox" id="favoriteSongs" name="songs" value="rnb">Rnb
+    <input type="checkbox" id="favoriteSongs" name="songs" value="classic">classic
+    <input type="checkbox" id="favoriteSongs" name="songs" value="romatic">Romatic
+    <input type="checkbox" id="favoriteSongs" name="songs" value="instrumental">Instrumental
+    <br>
+    <h3>FileUpload Input</h3>
+    <input type="file" id="fileupload" name="fileupload">
+    <br>
+    <h3>Submit Input</h3>
+    <input type="submit" id="submitForm" name="submitForm" value="Submit From">
+    <br>
+    <h3>Reset Input</h3>
+    <input type="reset" id="resetBtn" name="resetButton" value="Reset Form">
+    <br>
+    <h3>Date Input</h3>
+    <input type="date" id="birthday" name="birthday">
+    <br>
+    <h3>Email Input</h3>
+    <input type="email" id="userEmail" name="userEmail" placeholder="Enter Your Email">
+    <br>
+    <h3>Button Input</h3>
+    <input type="button" id="btn" name="button" value="Ckick Me!" onclick="alert('Button Clicked!')">
+    <br>
+    <h3>Color Input</h3>
+    <input type="color" id="colorPicker" name="colorChoice">
+    <br>
+    <h3>Date and Time Input</h3>
+    <input type="datetime-local" id="eventDateTime" name="eventDateTime">
+    <br>
+    <h3>Hidden Input</h3>
+    <input type="hidden" id="userId" name="userId" value="123">
+    <br>
+    <h3>Image Input</h3>
+    <input type="image" src="submit-logo.png" alt="submit">
+    <br>
+    <h3>Month Input</h3>
+    <input type="month" id="birthMonth" name="birthMonth">
+    <br>
+    <h3>Range Input</h3>
+    <input type="range" id="volume" name="volume" min="1" max="10" step="1">
+    <br>
+    <h3>Search Input</h3>
+    <input type="search" id="searchQuery" name="searchQuery">
+    <br>
+    <h3>Telephone Input</h3>
+    <input type="tel" id="phoneNumber" name="phoneNumber">
+    <br>
+    <h3>Time Input</h3>
+    <input type="time" id="appointmentTime" name="appointmentTime">
+    <br>
+    <h3>URL Input</h3>
+    <input type="url" id="websiteUrl" name="websiteUrl">
+    <br>
+    <h3>Week Input</h3>
+    <input type="week" id="selectedWeek" name="selectedWeek">
+    <br>
+    <hr>
+    <br>
+    <h2>Lable Element</h2>
+    <label for="male">Male:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female:</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="other">Other:</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <br>
+    <label for="agree">I Agree to the Terms and Conditionals</label>
+    <input type="checkbox" id="agree" name="agreement">
+    <br>
+    <h2>Select Element</h2>
+    <label for="techCareer">Tech Career Fields:</label>
+    <select name="techCareer" id="techCareer" size="4" multiple>
+      <option value="ux">UX</option>
+      <option value="ui">UI</option>
+      <option value="frontendEnginerring" selected>FrontEnd Engineering</option>
+      <option value="backendEngineering">BackEnd Engineering</option>
+    </select>
+    <br>
+    <hr>
+    <br>
+    <h2>Textarea Element</h2>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave Message"></textarea>
+    <br>
+    <hr>
+    <br>
+    <h2>Button Element</h2>
+    <!-- <input type="button" id="btn" name="button" value="Click Me!"> -->
+    <button type="button" onclick="changeBgColor()">Click Me!!</button>
+    <br>
+    <hr>
+    <br>
+    <h2>Fieldset and Legend Elements</h2>
+    <h3>Fieldset Element</h3>
+    <fieldset>
+      <legend>Personal Info:</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="username" placeholder="Enter Full Name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="userEmail" placeholder="Enter Email">
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="userPassword" placeholder="Enter Password" autocomplete="off">
+    </fieldset>
+    <input type="submit" id="submit" name="submitbtn" value="Submit From">
+  </form>
+
+
+  <div style="margin-top: 1000px;"></div>
+
+
+  <script>
+  function changeBgColor() {
+    //GENERATE RANDOM COLOR CODE
+    var randomColor ="#" + Math.floor(Math.random() * 16777215).toString(16);
+    //SET BG COLOR OF THE BODY TO RANDOM COLOR
+    document.body.style.backgroundColor = randomColor;
+  }     
+  </script>
+</body>
+</html>
